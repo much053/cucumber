@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "搜索testng",
+        "description": "",
+        "id": "在百度中搜索;搜索testng",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1143414165,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "访问百度 \"https://www.baidu.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.baidu.com/",
+                  "offset": 6
+                }
+              ],
+              "location": "Search.step0(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17680014,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "验证title",
+            "match": {
+              "location": "Search.step1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 413593125,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "输入 \"testng\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testng",
+                  "offset": 4
+                }
+              ],
+              "location": "Search.setp2(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 769913108,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "点击搜索按钮",
+            "match": {
+              "location": "Search.step3()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 173911894,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "清除搜索框",
+            "match": {
+              "location": "Search.step4()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@cases"
+          }
+        ]
+      }
+    ],
+    "name": "在百度中搜索",
+    "description": "",
+    "id": "在百度中搜索",
+    "keyword": "Feature",
+    "uri": "baidu.feature"
+  }
+]
