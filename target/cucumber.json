@@ -4,81 +4,43 @@
     "elements": [
       {
         "line": 4,
-        "name": "搜索testng",
+        "name": "登录药联助手",
         "description": "",
-        "id": "在百度中搜索;搜索testng",
+        "id": "药联助手;登录药联助手",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1143414165,
+              "duration": 837823754,
               "status": "passed"
             },
             "line": 5,
-            "name": "访问百度 \"https://www.baidu.com/\"",
+            "name": "输入账号\"15250989839\" 密码\"111111\"",
             "match": {
               "arguments": [
                 {
-                  "val": "https://www.baidu.com/",
-                  "offset": 6
+                  "val": "15250989839",
+                  "offset": 5
+                },
+                {
+                  "val": "111111",
+                  "offset": 21
                 }
               ],
-              "location": "Search.step0(String)"
+              "location": "Login.step0(String,String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 17680014,
+              "duration": 62578,
               "status": "passed"
             },
             "line": 6,
-            "name": "验证title",
+            "name": "打印返回",
             "match": {
-              "location": "Search.step1()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 413593125,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "输入 \"testng\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testng",
-                  "offset": 4
-                }
-              ],
-              "location": "Search.setp2(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 769913108,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "点击搜索按钮",
-            "match": {
-              "location": "Search.step3()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 173911894,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "清除搜索框",
-            "match": {
-              "location": "Search.step4()"
+              "location": "Login.step1()"
             },
             "keyword": "Then "
           }
@@ -91,10 +53,10 @@
         ]
       }
     ],
-    "name": "在百度中搜索",
+    "name": "药联助手",
     "description": "",
-    "id": "在百度中搜索",
+    "id": "药联助手",
     "keyword": "Feature",
-    "uri": "baidu.feature"
+    "uri": "ylzslogin.feature"
   }
 ]

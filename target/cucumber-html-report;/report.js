@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("baidu.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ylzslogin.feature");
 formatter.feature({
   "line": 1,
-  "name": "在百度中搜索",
+  "name": "药联助手",
   "description": "",
-  "id": "在百度中搜索",
+  "id": "药联助手",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 4,
-  "name": "搜索testng",
+  "name": "登录药联助手",
   "description": "",
-  "id": "在百度中搜索;搜索testng",
+  "id": "药联助手;登录药联助手",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -22,74 +22,36 @@ formatter.scenario({
 });
 formatter.step({
   "line": 5,
-  "name": "访问百度 \"https://www.baidu.com/\"",
+  "name": "输入账号\"15250989839\" 密码\"111111\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "验证title",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "输入 \"testng\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "点击搜索按钮",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "清除搜索框",
+  "name": "打印返回",
   "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "https://www.baidu.com/",
-      "offset": 6
-    }
-  ],
-  "location": "Search.step0(String)"
-});
-formatter.result({
-  "duration": 1143414165,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Search.step1()"
-});
-formatter.result({
-  "duration": 17680014,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+      "val": "15250989839",
+      "offset": 5
+    },
     {
-      "val": "testng",
-      "offset": 4
+      "val": "111111",
+      "offset": 21
     }
   ],
-  "location": "Search.setp2(String)"
+  "location": "Login.step0(String,String)"
 });
 formatter.result({
-  "duration": 413593125,
+  "duration": 837823754,
   "status": "passed"
 });
 formatter.match({
-  "location": "Search.step3()"
+  "location": "Login.step1()"
 });
 formatter.result({
-  "duration": 769913108,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Search.step4()"
-});
-formatter.result({
-  "duration": 173911894,
+  "duration": 62578,
   "status": "passed"
 });
 });
