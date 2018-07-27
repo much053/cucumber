@@ -1,0 +1,10 @@
+EquityGroupAdd=root.data.id,root.data.gmtCreated
+PreCheck=root.data.precheckNo
+PreChecklock=root.data.unlockNo,root.data.unlockedAt
+EquityAdd=root.data.extend.equityId,root.data.id,root.data.equityNo,root.data.gmtCreated,root.data.gmtUpdated
+EquityActive=root.data.activatedAt,root.data.gmtUpdated
+EquityDisable=root.data.expiredAt,root.data.gmtUpdated
+EquityEnable=root.data.expiredAt,root.data.gmtUpdated
+EquityUnlock=root.data.unlockNo
+EquityConsume=root.data.consumeNo,root.data.previousUsedValue
+EquityRefund=root.data.refundNo,root.data.previousUsedValue
