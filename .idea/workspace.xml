@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c66271-7fab-43f2-88db-77e4da14ab39" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/HttpClientUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ylzstestcase/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ylzstestcase/YLZSCucumbeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/CucumbeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/baidu.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ylfeatures/ylzslogin.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-report;/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report;/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-cli/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-cli/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcase/CucumbeRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcase/CucumbeRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcase/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HttpClientUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HttpClientUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HttpClientUtil$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HttpClientUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ylzstestcase/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ylzstestcase/YLZSCucumbeRunner.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,13 +26,15 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="feature" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Cucumber" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -85,11 +65,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/equity.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="147">
+              <caret line="153" column="10" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcase/CucumbeRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -154,6 +152,7 @@
       <find>PreCheckBody</find>
       <find>sonar-maven-plugin</find>
       <find>equity/consume/detail</find>
+      <find>Scenario</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -259,7 +258,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
@@ -365,7 +364,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532654762373" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532659747242" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -648,7 +647,7 @@
       <workItem from="1531894267185" duration="19748000" />
       <workItem from="1531989707186" duration="31694000" />
       <workItem from="1532481985062" duration="23183000" />
-      <workItem from="1532568944763" duration="13629000" />
+      <workItem from="1532568944763" duration="17233000" />
     </task>
     <task id="LOCAL-00001" summary="add yl">
       <created>1528185720683</created>
@@ -668,9 +667,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__权益详情 - 2018.07.26 at 15h 14m 58s.xml">
-      <configuration name="Scenario: 权益详情" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__用订单号查权益 - 2018.07.26 at 15h 29m 12s.xml">
       <configuration name="Scenario: 用订单号查权益" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -698,15 +694,18 @@
     <history-entry file="Scenario__获取总金额和保障总额 - 2018.07.26 at 18h 18m 07s.xml">
       <configuration name="Scenario: 获取总金额和保障总额" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario__获取总金额和保障总额 - 2018.07.27 at 10h 00m 48s.xml">
+      <configuration name="Scenario: 获取总金额和保障总额" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149387000" />
+    <option name="totallyTimeSpent" value="152991000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -715,7 +714,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -788,13 +787,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/assertdata/equitynew" />
     <entry file="file://$PROJECT_DIR$/src/test/java/log/TestLog4j.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/commons-logging.properties" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcase/CucumbeRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/HttpClientUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -854,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/ignoredata/equity">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -891,8 +876,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/equity.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="147">
+          <caret line="153" column="10" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcase/CucumbeRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

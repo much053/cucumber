@@ -152,6 +152,8 @@ Feature:  权益中心
 
   @cases
   Scenario: 获取总金额和保障总额
+    #guaranteeStatus改成2
     #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
     Then 请求接口 接口地址"equity/totalfee" 参数文件路径"src\test\resources\senddata\equity-EquityTotalfeeBody"
     Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityEquityTotalfeeResponse" 忽略字段""
+
