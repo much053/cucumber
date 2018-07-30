@@ -60,14 +60,14 @@ Feature:  权益中心
     Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityActiveResponse" 忽略字段"src\test\resources\ignoredata\equity-EquityActive"
 
   @cases
-  Scenario: 禁用权益
+  Scenario: 禁用团体权益
     Given 预置数据 操作类型insert 库名"cn_turboradio_module_test_equity" 表名"equity" 入库数据路径"src\test\resources\datapreset\equity-EquityDisableInsert"
     Given 预置数据 操作类型update 库名"cn_turboradio_module_test_equity" 表名"equity" 更新数据路径"src\test\resources\datapreset\equity-EquityDisableUpdate"
     Then 请求接口 接口地址"equity/disable" 参数文件路径"src\test\resources\senddata\equity-EquityDisableBody"
     Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityDisableResponse" 忽略字段"src\test\resources\ignoredata\equity-EquityDisable"
 
   @cases
-  Scenario: 启用权益
+  Scenario: 启用团体权益
     Given 预置数据 操作类型insert 库名"cn_turboradio_module_test_equity" 表名"equity" 入库数据路径"src\test\resources\datapreset\equity-EquityEnableInsert"
     Given 预置数据 操作类型update 库名"cn_turboradio_module_test_equity" 表名"equity" 更新数据路径"src\test\resources\datapreset\equity-EquityEnableUpdate"
     Then 请求接口 接口地址"equity/disable" 参数文件路径"src\test\resources\senddata\equity-EquityEnableBody"
@@ -155,5 +155,91 @@ Feature:  权益中心
     #guaranteeStatus改成2
     #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
     Then 请求接口 接口地址"equity/totalfee" 参数文件路径"src\test\resources\senddata\equity-EquityTotalfeeBody"
-    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityEquityTotalfeeResponse" 忽略字段""
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityTotalfeeResponse" 忽略字段""
+
+  @cases
+  Scenario: 关闭次卡提醒
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"equity/cue" 参数文件路径"src\test\resources\senddata\equity-EquityCueBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityCueResponse" 忽略字段""
+
+  @cases
+  Scenario: 确认阅读协议
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"equity/read" 参数文件路径"src\test\resources\senddata\equity-EquityReadBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityReadResponse" 忽略字段""
+
+  @cases
+  Scenario: 判断权益是否可用
+    #本次可用金额为啥是0
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"equity/available" 参数文件路径"src\test\resources\senddata\equity-EquityAvailableBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityAvailableResponse" 忽略字段""
+
+  @cases
+  Scenario:   通过id获取多条权益信息
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"equity/ids/lists" 参数文件路径"src\test\resources\senddata\equity-EquityIdsListsBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityIdsListsResponse" 忽略字段""
+
+  @cases
+  Scenario:   获取每个用户的权益余额列表
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"equity/ids/lists" 参数文件路径"src\test\resources\senddata\equity-EquityIdsListsBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-EquityIdsListsResponse" 忽略字段""
+
+  #获取用户离过期最近的权益信息
+  #没有参数说明
+
+  @cases
+  Scenario:   创建保障
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"guarantee/add" 参数文件路径"src\test\resources\senddata\equity-GuaranteeAddBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteeAddResponse" 忽略字段"src\test\resources\ignoredata\equity-GuaranteeAdd"
+
+  @cases
+  Scenario:   保障详情
+    #Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"equity_refund" 删除条件路径"src\test\resources\datapreset\equity-EquityRefundDelete"
+    Then 请求接口 接口地址"guarantee/detail" 参数文件路径"src\test\resources\senddata\equity-GuaranteeDetailBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteeDetailResponse" 忽略字段""
+
+  @cases
+  Scenario:   保障列表
+    Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"guarantee" 删除条件路径"src\test\resources\datapreset\equity-GuaranteePagingDelete"
+    Then 请求接口 接口地址"guarantee/paging" 参数文件路径"src\test\resources\senddata\equity-GuaranteePagingBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteePagingResponse" 忽略字段""
+
+  @cases
+  Scenario:   赠送保障
+    Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"guarantee" 删除条件路径"src\test\resources\datapreset\equity-GuaranteeGiveDelete"
+    Given 预置数据 操作类型insert 库名"cn_turboradio_module_test_equity" 表名"guarantee" 入库数据路径"src\test\resources\datapreset\equity-GuaranteeGiveInsert"
+    Then 请求接口 接口地址"guarantee/give" 参数文件路径"src\test\resources\senddata\equity-GuaranteeGiveBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteeGiveResponse" 忽略字段""
+
+  @cases
+  Scenario:   激活保障
+    Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"guarantee" 删除条件路径"src\test\resources\datapreset\equity-GuaranteeActiveDelete"
+    Given 预置数据 操作类型insert 库名"cn_turboradio_module_test_equity" 表名"guarantee" 入库数据路径"src\test\resources\datapreset\equity-GuaranteeActiveInsert"
+    Then 请求接口 接口地址"guarantee/active" 参数文件路径"src\test\resources\senddata\equity-GuaranteeActiveBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteeActiveResponse" 忽略字段"src\test\resources\ignoredata\equity-GuaranteeActive"
+
+  @cases
+  Scenario:   检查保障是否购买
+    Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"guarantee" 删除条件路径"src\test\resources\datapreset\equity-GuaranteeCheckDelete"
+    Given 预置数据 操作类型insert 库名"cn_turboradio_module_test_equity" 表名"guarantee" 入库数据路径"src\test\resources\datapreset\equity-GuaranteeCheckInsert"
+    Then 请求接口 接口地址"guarantee/check" 参数文件路径"src\test\resources\senddata\equity-GuaranteeCheckBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteeCheckResponse" 忽略字段""
+
+  @cases
+  Scenario:   禁用权益
+    Given 预置数据 操作类型delete 库名"cn_turboradio_module_test_equity" 表名"guarantee" 删除条件路径"src\test\resources\datapreset\equity-GuaranteeDisableDelete"
+    Given 预置数据 操作类型insert 库名"cn_turboradio_module_test_equity" 表名"guarantee" 入库数据路径"src\test\resources\datapreset\equity-GuaranteeDisableInsert"
+    Then 请求接口 接口地址"guarantee/disable" 参数文件路径"src\test\resources\senddata\equity-GuaranteeDisableBody"
+    Then 校验返回值 数据路径"src\test\resources\assertdata\equity-GuaranteeDisableResponse" 忽略字段""
+
+
+
+
+
+
 
